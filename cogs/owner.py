@@ -280,7 +280,7 @@ class Owner:
             )
             await asyncio.sleep(3)
 
-        await self.bot.say("Confirm in the console that you're the owner.")
+        await self.bot.say("Confirm in the console that you're the real owner.")
         self.setowner_lock = True
         t = threading.Thread(target=self._wait_for_answer,
                              args=(ctx.message.author,))
